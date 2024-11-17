@@ -50,11 +50,12 @@ The backend is built with Node.js and Express. It handles:
 2. Start the backend:
    ```bash
    cd backend
+   npm install
    cd src
    npm run dev
 
 3. Start the frontend:
    ```bash
-   Navigate to root directory
+   npm install
    cd src
    npm start
