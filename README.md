@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Contact Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The Contact Management App is a web application built to manage and store contact information, such as names, email addresses, phone numbers, and job titles. This app allows users to add, edit, delete, and view contact details. The application is divided into two main parts: the frontend (React.js) and the backend (Node.js with Express).
 
-## Available Scripts
+## Features
+- Add new contacts to the system.
+- Edit existing contacts.
+- Delete contacts.
+- View a table of all contacts with pagination and sorting by first name and last name.
 
-In the project directory, you can run:
+## Technologies Used
+- **Frontend:** React.js, Material UI
+- **Backend:** Node.js, Express
+- **Database:** MongoDB (MongoDB Atlas)
+- **Authentication:** JWT (JSON Web Tokens) for secure user authentication
+- **Deployment:** Heroku (for backend), GitHub Pages (for frontend)
 
-### `npm start`
+## Technical Decisions
+- **Frontend Framework:** React.js was chosen for its component-based architecture, making the app more maintainable and scalable.
+- **UI Library:** Material UI was used for its pre-built components, which helped speed up the UI development process.
+- **Backend Framework:** Express.js was chosen due to its simplicity and flexibility for building APIs quickly.
+- **Database:** MongoDB was chosen for its schema-less structure, which works well for a contact management system where data fields can vary.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How It Works
+### Frontend
+The frontend of the app is built using React.js. It handles:
+- The user interface (UI), including forms to add/edit contacts and a table to display the contacts.
+- State management using React's `useState` and `useEffect` hooks.
+- Makes API requests to the backend to fetch, add, update, and delete contacts.
+  
+### Backend
+The backend is built with Node.js and Express. It handles:
+- API endpoints for creating, reading, updating, and deleting contact data.
+- Uses MongoDB for storing contact data in a database.
+- Secure authentication using JWT to ensure that only authorized users can manage contacts.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup Instructions
 
-### `npm test`
+### Prerequisites
+- Node.js (>= 12.x)
+- MongoDB (set up on MongoDB Atlas or locally)
+- npm or yarn (for managing dependencies)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Backend Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/contact-management-app.git
+   cd contact-management-app
