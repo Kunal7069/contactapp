@@ -32,7 +32,25 @@ The frontend of the app is built using React.js. It handles:
 The backend is built with Node.js and Express. It handles:
 - API endpoints for creating, reading, updating, and deleting contact data.
 - Uses MongoDB for storing contact data in a database.
-- Secure authentication using JWT to ensure that only authorized users can manage contacts.
+
+## Challenges Faced and How They Were Resolved
+### 1. **Database Integration Issues**
+   - **Challenge:** Connecting the frontend to the backend and correctly handling database operations initially led to some errors due to incorrect connection strings and asynchronous fetching.
+   - **Solution:** I used proper error handling, ensured correct connection settings, and integrated Mongoose for better schema management and data validation.
+
+### 2. **State Management and Data Flow**
+   - **Challenge:** Synchronizing the state after adding, editing, or deleting contacts was a bit tricky, as the UI wasn’t always updated correctly.
+   - **Solution:** I used React's `useState` and `useEffect` hooks to manage the state and ensured the UI re-renders after each operation by calling the `loadContacts` function.
+
+### 3. **Pagination and Sorting**
+   - **Challenge:** Adding pagination and sorting the contact table was a bit challenging due to the need to dynamically sort by first name and last name.
+   - **Solution:** I used Material-UI's built-in sorting functionality and implemented pagination with a limit of two contacts per page.
+
+### 4. **Handling Form Submissions and Validations**
+   - **Challenge:** Validating user input and ensuring that only valid data is sent to the backend was another obstacle.
+   - **Solution:** I implemented simple form validation that required users to fill out all fields before submission, ensuring correct data integrity.
+
+
 
 ## Setup Instructions
 
