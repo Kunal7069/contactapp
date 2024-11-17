@@ -41,8 +41,20 @@ The backend is built with Node.js and Express. It handles:
 - MongoDB (set up on MongoDB Atlas or locally)
 - npm or yarn (for managing dependencies)
 
-### Backend Setup
+### Project Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/contact-management-app.git
-   cd contact-management-app
+   git clone https://github.com/Kunal7069/contactapp.git
+   cd contactapp
+
+2. Start the backend:
+   ```bash
+   cd backend
+   cd src
+   npm run dev
+
+3. Start the frontend:
+   ```bash
+   Navigate to root directory
+   cd src
+   npm start
