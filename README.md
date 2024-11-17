@@ -13,14 +13,13 @@ The Contact Management App is a web application built to manage and store contac
 - **Frontend:** React.js, Material UI
 - **Backend:** Node.js, Express
 - **Database:** MongoDB (MongoDB Atlas)
-- **Authentication:** JWT (JSON Web Tokens) for secure user authentication
-- **Deployment:** Heroku (for backend), GitHub Pages (for frontend)
+
 
 ## Technical Decisions
 - **Frontend Framework:** React.js was chosen for its component-based architecture, making the app more maintainable and scalable.
 - **UI Library:** Material UI was used for its pre-built components, which helped speed up the UI development process.
 - **Backend Framework:** Express.js was chosen due to its simplicity and flexibility for building APIs quickly.
-- **Database:** MongoDB was chosen for its schema-less structure, which works well for a contact management system where data fields can vary.
+- **Database:**  As the app grows, MongoDB's horizontal scalability will be beneficial. It allows for easy sharding and distributing data across multiple servers to handle large amounts of data and traffic.
 
 ## How It Works
 ### Frontend
