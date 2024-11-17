@@ -44,26 +44,34 @@ const ContactManagement = () => {
     };
 
     return (
-        <Container maxWidth="lg">
-            <Paper sx={{ padding: 4, boxShadow: 3 }}>
+        <Container maxWidth="xl">
+            <Paper sx={{ padding: 0.2, boxShadow: 3 }}>
                 <Typography variant="h4" component="h1" align="center" gutterBottom>
                     Contact Management
                 </Typography>
                 <Divider sx={{ mb: 3 }} />
-                <Box sx={{ mb: 4 }}>
-                    <ContactForm
-                        onSubmit={handleAddOrUpdateContact}
-                        currentContact={currentContact}
-                        setCurrentContact={setCurrentContact}
-                    />
-                </Box>
-                <Grid container spacing={2} sx={{ mb: 4 }}>
-                    <Grid item xs={12} md={12}>
-                        <ContactsTable
-                            contacts={contacts}
-                            onEdit={setCurrentContact}
-                            onDelete={handleDeleteContact}
-                        />
+                <Grid container spacing={2}> 
+                    <Grid item xs={12} md={6}>
+                        <Box sx={{ mb: 2 }}> 
+                            <ContactForm
+                                onSubmit={handleAddOrUpdateContact}
+                                currentContact={currentContact}
+                                setCurrentContact={setCurrentContact}
+                            />
+                        </Box>
+                    </Grid>
+
+                   
+                    <Grid item xs={12} md={6}>
+                        <Box sx={{ mb: 2, overflowX: 'auto' }}> 
+                            <div style={{ maxWidth: '100%', overflowX: 'auto' }}>
+                                <ContactsTable
+                                    contacts={contacts}
+                                    onEdit={setCurrentContact}
+                                    onDelete={handleDeleteContact}
+                                />
+                            </div>
+                        </Box>
                     </Grid>
                 </Grid>
             </Paper>
